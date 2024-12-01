@@ -33,4 +33,20 @@ function fun(){
 var result=fun();
 console.log(result(5,6));
 
+var createHelloworld=function (){
+    return function(...args){
+        return 'Hello World';
+    }
+}
+var hello=createHelloworld();
+console.log(hello());
+console.log(hello(123));
 
+var counter=function(n){
+    return function(){
+       return ++n;
+    }
+}
+
+var counter1=counter(5);
+console.log(counter1);
