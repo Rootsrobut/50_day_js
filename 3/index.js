@@ -22,5 +22,15 @@ var sum=function(a,b,c){
 }
 var storesum=sum(3,4,5);
 console.log(storesum.getSumThree());
-console.log(storesum.getSumTwo());
-*/
+console.log(storesum.getSumTwo());*/
+
+// function inside functon 
+function fun(){
+    return function f(a,b){
+       return a+b;
+    }
+}
+var result=fun();
+console.log(result(5,6));
+
+
