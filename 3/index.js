@@ -102,7 +102,67 @@ console.log(storesum.getSumTwo());*/
 // var counter=createCounter(23);
 // console.log(counter.increment());
 
+// map , filter reduce 
 
+// var arr= new Array(3)
+// arr[0]=11;
+// arr[1]=21;
+// arr[2]=31;
+// var arr1=new Array(23,34,54,45);
+// let arr3=[23,43,23,123];
+// console.log(arr,'\n',arr1,'\n',arr3);
+// let arr4=[{
+//        name:'ram',
+//        age:23,
+//        city:'delhi',
+//        marks:90,
+//     },
+//     {
+//         name:'ramaSingh',
+//         age:23,
+//         city:'patna',
+//         marks:60,
+//     },
+//     {
+//         name:'Singh',
+//         age:23,
+//         city:'Begusari',
+//         marks:98
+//     },
+//     {
+//         name:'Ramnath',
+//         age:29,
+//         city:'Mohali',
+//         marks:96
+//     }];
+//  for(let i of arr4){
+//     for(let key in i){
+//         console.log(key,i[key]);
+//     }
+//  }
 
+// const nums=[23,34,54,67,89];
+// const nums1=nums.map(fun);
+// function fun(n,i,arr){
+//     return n*i;
+// }
+// console.log(nums1)
+// array.map((currvalue, index, array) => {})
 
+    // const ages=[12,23,45,43,32,12,32,43];
+    // const result=ages.filter(fun);
+    // console.log(result);
+    // function fun(age){
+    //     return age>=35;
+    // }
+// array.filter((currvalue, index, array) => {})
 
+    // const ages=[1,2,3,4,5,6,7,8,9];
+    // const result=ages.reduce(fun);
+    // console.log(result);
+    // function fun(total,age){
+    //     total+=age;
+    //     return total;
+    // }
+//const result=ages.reduce((previousValue, currentValue, currentIndex, array) => {})(fun);
+// array.reduce((previousValue, currentValue, currentIndex, array) => {})
