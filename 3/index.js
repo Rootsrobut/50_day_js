@@ -24,29 +24,85 @@ var storesum=sum(3,4,5);
 console.log(storesum.getSumThree());
 console.log(storesum.getSumTwo());*/
 
-// function inside functon 
-function fun(){
-    return function f(a,b){
-       return a+b;
-    }
-}
-var result=fun();
-console.log(result(5,6));
+// lecture =3 function inside functon 
+// function fun(){
+//     return function f(a,b){
+//        return a+b;
+//     }
+// }
+// var result=fun();
+// console.log(result(5,6));
 
-var createHelloworld=function (){
-    return function(...args){
-        return 'Hello World';
-    }
-}
-var hello=createHelloworld();
-console.log(hello());
-console.log(hello(123));
+// var createHelloworld=function (){
+//     return function(...args){
+//         return 'Hello World';
+//     }
+// }
+// var hello=createHelloworld();
+// console.log(hello());
+// console.log(hello(123));
 
-var counter=function(n){
-    return function(){
-       return ++n;
-    }
-}
+// var counter=function(n){
+//     return function(){
+//        return ++n;
+//     }
+// }
+// var counter1=counter(5);
+// console.log(counter1);
 
-var counter1=counter(5);
-console.log(counter1);
+//lecture 4 To Be Or Not To be 
+// object is in the form of key value pair
+// let obj={
+//     name:'John',
+//     age:30,
+//     address:{
+//         street:'123 main st',
+//         city:'NY',
+//         state:'NY',
+//         },
+//     greet:function(){
+//        console.log(`Hello ${this.name}`);
+//     },
+
+// }
+// console.log(obj.greet);
+
+// function calc(val){
+//     const obj={
+//         add(val1){
+//               var a=val+val1;
+//               return a;
+//         },
+//         sub(val1){
+//             var b=val-val1;
+//             return b;
+//         }
+//     }
+//     return obj;
+// }
+// console.log(calc(10).add(5));
+
+//lecture 5
+
+// function createCounter(init){
+//     let count = init;
+//     let obj={
+//         increment(){
+//           return ++init;
+//         },
+//         decrement(){
+//             return --init;
+//         },
+//         getCount(){
+//             return count;
+//         }
+//     }
+//     return obj;          
+// }
+// var counter=createCounter(23);
+// console.log(counter.increment());
+
+
+
+
+
