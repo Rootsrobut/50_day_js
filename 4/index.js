@@ -19,7 +19,7 @@ let userDetails2={
 }
 // function borrowing 
 userDetails.printDetails.call(userDetails2);
-*/
+
 let userDetails={
     name:"Rahul",
     Age:28,
@@ -43,3 +43,33 @@ let userDetails2={
 // printDetails.apply(userDetails,['up','india']);
 //bind  function 
 printDetails.bind(userDetails2,'bihar','india')();
+*/
+
+// function composition in js
+
+function add(a,b){
+    return a+b;
+}
+function multiply(a,b){
+    return a*b;
+}
+function divide(a,b){
+    return a/b;
+}
+function square(val){
+    return val*val;
+}
+
+// function addsquare(a,b){
+//     return square(add(a,b));
+// }
+// console.log(addsquare(5,6));
+
+// function composition(f1,f2,f3){
+//     return function(...args){
+//         return f3(f2(f1(...args)));
+//     }
+// }
+// const result=composition(divide,add,square);
+// console.log(result(12,12,12));
+
